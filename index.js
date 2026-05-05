@@ -26,7 +26,7 @@ let gameOver = false;
 
     
 
-    if (guess > 100) {
+    if (guess > 100 || guess < 1) {
         statuss.textContent = "NAG BABASA KABA 1-100 NGANI ";
         
     }else if (guess > numberF) {
