@@ -24,23 +24,33 @@ let gameOver = false;
 
     let guess = Number(inputs.value);
 
-    arryans.push(guess);
+    
 
-    if (guess > numberF) {
+    if (guess > 100) {
+        statuss.textContent = "NAG BABASA KABA 1-100 NGANI ";
+        
+    }else if (guess > numberF) {
         statis.push("Lower");
         statuss.textContent = "Lower";
+        arryans.push(guess);
         lives--;
+    }  
+    else if (guess === null||guess === 0) {
+        statuss.textContent = "You didnt Put any Number";
     } 
     else if (guess < numberF) {
         statis.push("Higher");
         statuss.textContent = "Higher";
         lives--;
+        arryans.push(guess);
     } 
+    
     else {
         statis.push("You Won");
         statuss.textContent = "You Won!";
         gameOver = true; 
         submist.disabled = true;
+        arryans.push(guess);
     }
 
     attempts.textContent = lives;
