@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game">   
+            <div class="box">
+    <h1>Guess the Number!!</h1>
+    <h2 id="Status">Ready?</h2>
+    <h2>You have <span id="attempts">6</span> attempts left</h2>
+    <input type="number" id="input" placeholder="Enter a number between 1 and 100">
+    <button id="submit">Submit</button>
+    <button id="reset">Reset</button>
+    
+    <div id="History" class="histo">
+        <div class="left">
+            <p class="answer" >1. <span  id="ans1"></span ></p>
+            <p class="answer" >2. <span id="ans2"></span></p>
+            <p class="answer" >3. <span id="ans3"></span></p>
+            <p class="answer" >4. <span  id="ans4"></span></p>
+            <p class="answer" >5. <span  id="ans5"></span></p>
+            <p class="answer" >6. <span id="ans6"></span></p>
+        </div>
+        <div class="right">
+        <p>status: <span id="Status1"></span ></p>
+        <p>status: <span  id="Status2"></span></p>
+        <p>status: <span  id="Status3"></span></p>
+        <p>status: <span  id="Status4"></span></p>
+        <p>status: <span  id="Status5"></span></p>
+        <p>status: <span  id="Status6"></span></p>
+            
+        </div>
+
+
+
+        
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
