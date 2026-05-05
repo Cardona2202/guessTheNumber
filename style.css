@@ -23,6 +23,13 @@ h1 {
      height: 100%;
      
 }
+.myg{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        padding: 10px;
+    height: 30px;
+    width: 250px;
+}
 
 .histo{
     display: grid;
@@ -33,6 +40,9 @@ h1 {
 }
 .left{
     
+    min-width: 90px;
+}
+.right{
     min-width: 90px;
 }
 .box{
