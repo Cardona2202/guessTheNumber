@@ -16,7 +16,7 @@ let gameOver = false;
         console.log(numberF);
         
         submist.onclick = function () {
-
+           
     if (gameOver || lives <= 0) {
         statuss.textContent = "Game is already finished";
         return;
@@ -31,6 +31,7 @@ let gameOver = false;
         
     }else if (guess > numberF) {
         statis.push("Lower");
+       
         statuss.textContent = "Lower";
         arryans.push(guess);
         lives--;
@@ -54,7 +55,7 @@ let gameOver = false;
     }
 
     attempts.textContent = lives;
-
+     inputs.value=("");
     if (lives <= 0) {
         gameOver = true;
         statuss.textContent = `Game Over the number is ${numberF}`;
