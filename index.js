@@ -13,7 +13,7 @@ let statis=[];
 let gameOver = false;
 
         numberF= Math.floor(Math.random()*100);
-        console.log(numberF);
+        
         
         submist.onclick = function () {
            
